@@ -1,0 +1,80 @@
+.display-outter  {
+    background-color: #000;  
+    display: inline-block;
+}
+
+.display {
+    position: relative;
+    width: 26px;
+    height: 52px;
+    float: left;
+    margin: .5rem .25rem; 
+}
+
+.display-pipe {
+    position: absolute;
+    background-color: #fff;
+    border-radius: .3rem;
+}
+
+.display-pipe-1 {
+    width: 100%;
+    height: 8px;
+}
+
+.display-pipe-2 {
+    width: 8px;
+    height: calc(50% + 4px);
+}
+
+.display-pipe-3 {
+    width: 8px;
+    height: calc(50% + 4px);
+    right: 0;
+}
+
+.display-pipe-4 {
+    width: 100%;
+    height: 8px;
+    top: calc(50% - 4px);
+}
+
+.display-pipe-5 {
+    width: 8px;
+    height: calc(50% + 4px);
+    top: calc(50% - 4px);
+}
+
+.display-pipe-6 {
+    width: 8px;
+    height: calc(50% + 4px);
+    top: calc(50% - 4px);
+    right: 0;
+}
+
+.display-pipe-7 {
+    width: 100%;
+    height: 8px;
+    top: calc(100% - 8px);
+}
+
+.display-pipe-8 {
+    width: 8px;
+    height: 100%;
+    left: calc(50% - 4px);
+}
+
+.display-pipe-9 {
+    width: 8px;
+    height: 100%;
+    left: calc(50% - 4px);
+    transform: rotate(45deg);
+}
+
+.display-pipe-10 {
+    width: 8px;
+    height: 100%;
+    left: calc(50% - 4px);
+    transform: rotate(-45deg);
+}
+
