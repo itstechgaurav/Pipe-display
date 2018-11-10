@@ -9,6 +9,7 @@
     height: 52px;
     float: left;
     margin: .5rem .25rem; 
+    overflow: hidden;
 }
 
 .display-pipe {
@@ -66,15 +67,72 @@
 
 .display-pipe-9 {
     width: 8px;
-    height: 100%;
-    left: calc(50% - 4px);
-    transform: rotate(45deg);
+    height: 105%;
+    left: 0;
+    transform-origin: top;
+    transform: rotate(-21deg);
 }
 
 .display-pipe-10 {
     width: 8px;
-    height: 100%;
-    left: calc(50% - 4px);
-    transform: rotate(-45deg);
+    height: 105%;
+    right: 0;
+    transform-origin: top;
+    transform: rotate(21deg);
 }
 
+
+.display-pipe-11 {
+    width: 100%;
+    height: 8px;
+    top: 10px;
+}
+
+.display-pipe-12 {
+    width: 8px;
+    height: 60%;
+    right: 0;
+    top: 0;
+    transform-origin: top;
+    transform: rotate(22deg);
+}
+
+.display-pipe-13 {
+    width: 8px;
+    height: 60%;
+    right: 0;
+    bottom: 0;
+    transform-origin: bottom;
+    transform: rotate(-22deg);   
+}
+
+
+.display-pipe-14 {
+    width: 100%;
+    height: 8px;
+    bottom: 10px;
+}
+
+.display-pipe-15 {
+    width: 8px;
+    height: 102%;
+    left: 0;
+    transform-origin: top;
+    transform: rotate(-10deg);
+}
+
+.display-pipe-16 {
+    width: 8px;
+    height: 102%;
+    right: 0;
+    transform-origin: top;
+    transform: rotate(10deg);
+}
+
+.display-pipe-17 {
+    width: 8px;
+    height: 60%;
+    left: 0;
+    transform-origin: top;
+    transform: rotate(-15deg);
+}

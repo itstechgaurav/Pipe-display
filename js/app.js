@@ -1,9 +1,20 @@
 class display {
     constructor(d, id) {
-        d = d;
+        d = d.toLowerCase();
         this.d = d;
+        this.id = id;
+        this.init(d, id);
+    }
+    
+    change(d) {
+        d = d.toLowerCase();
+        this.d = d;
+        this.init(this.d, this.id);
+    }
+    
+    init(d,id) {
         this.display = document.getElementById(id);
-        console.log(d.split(""));
+        this.display.innerHTML = "";
         d.split("").forEach(function (it) {
             this.match(it);
         }.bind(this));
@@ -25,12 +36,16 @@ class display {
                 p: [7]
             },
             {
+                d: "@",
+                p: [1,3,4,5,6,7]
+            },
+            {
                 d: "0",
-                p: [1, 2, 3, 5, 6, 7]
+                p: [1, 2, 3, 5, 6, 7, 9]
             },
             {
                 d: "1",
-                p: [2, 5]
+                p: [3,6]
             },
             {
                 d: "2",
@@ -106,7 +121,7 @@ class display {
             },
             {
                 d: "k",
-                p: [2]
+                p: [2,5,12,13]
             },
             {
                 d: "l",
@@ -114,15 +129,19 @@ class display {
             },
             {
                 d: "m",
-                p: [2]
+                p: [2,3,5,6,11]
             },
             {
                 d: "n",
-                p: [2]
+                p: [2,3,5,6,9]
             },
             {
                 d: "o",
                 p: [1,2,3,5,6,7]
+            },
+            {
+                d: "p",
+                p: [1,2,3,4,5]
             },
             {
                 d: "q",
@@ -130,7 +149,7 @@ class display {
             },
             {
                 d: "r",
-                p: [1,2,3,4,5]
+                p: [1,2,3,4,5,13]
             },
             {
                 d: "s",
@@ -146,11 +165,11 @@ class display {
             },
             {
                 d: "v",
-                p: [1,2,5]
+                p: [15,16]
             },
             {
                 d: "w",
-                p: [1,2,5]
+                p: [2,3,5,6,14]
             },
             {
                 d: "x",
@@ -158,17 +177,17 @@ class display {
             },
             {
                 d: "y",
-                p: [1,2,5]
+                p: [10,17]
             },
             {
                 d: "z",
-                p: [1,2,7]
+                p: [1,7,10]
             },
             
 
         ];
         
-//        kmnrvwyz
+//        y
 
         __display__d.forEach(function (it) {
             if (it.d == d) {
@@ -197,7 +216,3 @@ class display {
     }
 
 }
-
-
-
-let dd = new display("1-789", "name")
